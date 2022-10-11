@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Video Subtittle - HTML5</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="stylesheet" href="subtittle.css">
+  <style>
+    body
+    {
+
+        border: 1 px solid black;
+        background-color: #d9ac8b;
+    }
+    header
+    {
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700px;
+    }
+    button
+    {
+        border-radius: 20px;
+        padding: 10px;
+        width: 100px;
+        box-shadow: 2px 2px 4px #461b28,
+        -2px -2px -4px #2f121a;
+    }
+    button:hover
+    {
+        color: #461b28;
+    }
+    p
+    {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        align: center;
+    }
+    
+  </style>
+</head> 
+<body> 
+  <header align="center">VIDEO SUBTITTLE</header> 
+  <p>Judul Lagu: Liar Angin </p>
+  <p>Penyanyi  : Febby Putri</p>
+  <p>Source video   : <a href="https://www.youtube.com/watch?v=RYmLBJnmT7I">https://www.youtube.com/watch?v=RYmLBJnmT7I</a></p>
+
+  <center>
+  <button onclick="playVid()" type="button">Play</button>
+  <button onclick="pauseVid()" type="button">Pause</button>
+  <br><br>
+  </center>
+
+<center>
+    <video width="1000px"  id="myVideo" controls> 
+    <source src="Feby Putri - Liar Angin.mp4" type="video/mp4"/> 
+    <track src="liarangin.vtt" kind="subtitles" srclang="id" label="Indonesia"/> 
+    </video>
+</center>
+<br><br><br>
+
+    <h2 align="center">LIRIK -LIAR ANGIN-</h2>
+    <p align="center">Tak sejalan langkah bersama <br>
+        Bertujuan tak satu arah <br>
+        Utuh dalam perasaan <br>
+    </p>
+    <p align="center">Harap kenyataan memihak <br>
+        Jumpa ria dengan sang terang <br>
+        Menuntunku dalam padam <br>
+        Terdengar kah di sini <br>
+        Masih terbalut harapan dan tanya <br>
+    </p>
+    <p align="center">Liar angin tak berarah pun tak mampu <br>
+        Sampaikan pesan yang berteduh <br>
+        Di hati yang sepi <br>
+        Di ujung hamparan banyak kita banyak kata <br>
+        Tertahankan oleh waktu yang terus berjalan <br>
+        Bahkan semesta tertawa <br>
+        Ha ha ha ha <br>
+        Tak terlihat tak terdengar <br>
+    </p>
+    <p align="center">Harap kenyataan memihak <br>
+        Jumpa ria dengan sang terang <br>
+        Menuntunku dalam padam <br>
+        Masih terbalut harapan dan tanya <br>
+    </p>
+    <p align="center">Pada akhirnya <br>
+        Harap dan tanya <br>
+        Terekam di ingatan <br>
+        Jemari pun bergerak mengungkapkan <br>
+        Pada akhirnya <br>
+    </p>
+    <p align="center">Liar angin tak berarah pun tak mampu <br>
+        Sampaikan pesan yang berteduh <br>
+        Di hati yang sepi <br>
+        Di ujung hamparan banyak kita banyak kata <br>
+        Tertahankan oleh waktu yang terus berjalan <br>
+        Bahkan semesta tertawa <br>
+        Ha ha ha ha <br>
+        Tak terlihat tak terdengar <br>
+    </p>
+    <p align="center">Ha ha ha ha <br>
+        Bahkan semesta tertawa <br>
+        Ha ha ha ha <br>
+        Banyak kita banyak kata <br>
+        Ha ha ha ha <br>
+        Bahkan semesta tertawa <br>
+    </p>
+        
+   
+
+  <script> 
+    var vid = document.getElementById("myVideo"); 
+    
+    function playVid() { 
+      vid.play(); 
+    } 
+    
+    function pauseVid() { 
+      vid.pause(); 
+    } 
+    </script> 
+</body> 
+</html>
