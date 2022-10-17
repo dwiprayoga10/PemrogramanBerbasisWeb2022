@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title>Merenginfo-About me</title>
+ <link rel="stylesheet" href="sboutme.css">
+ <link rel="icon" href="image/favicon-32x32.png">
+</head>
+<body>
+    <header> 
+		<h1>MERENG INFO!</h1>
+	</header>
+	<section>
+			<nav>
+				<ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="cv.html">DOWNLOAD CV</a></li>
+					<li><a href="aboutme.html">ABOUT ME</a></li>
+					<li><a href="kontak.html">KONTAK</a></li>
+					<li><a href="artikel.html">ARTIKEL</a></li>			
+				</ul>	
+			</nav>	
+		</section>
+ <hr />
+
+ <article>
+ <h1>Tentang Saya </h1>
+ <p>
+ Perkenalkan Nama Saya Dwi Prayoga,
+ Saya Lahir di Pemalang, tepat 19 tahun yang lalu.
+ </p>
+ <p>Saat ini saya sedang menempuh pendidikan di Universitas Dian Nuswantoro</p>
+ <p>Jurusan Fakultas Ilmu Komputer,Prodi Teknk Informatika</p>
+ <p>
+ Saya masih baru dalam web development, karena itu
+ saya tidak akan pernah berhenti belajar.
+ </p>
+ <p>
+ Saya ingin menguasai bahasa HTML, CSS, dan Javascript.
+ Simak video lengkap tentang saya.
+ </p>
+ <p>
+ <img src="image/aku.jpg" alt="" style="width: 215px; height: 287px;">
+ <img src="image/PAS POTO 1.jpg" alt="" style="width: 215px; height: 287px;">
+ <div style="text-align:center"> 
+	<button onclick="playPause()">Play/Pause</button> 
+	<button onclick="makeBig()">Big</button>
+	<button onclick="makeSmall()">Small</button>
+	<button onclick="makeNormal()">Normal</button>
+	<br><br>
+	<video id="video1" width="420">
+	  <source src="video/videoplayback.mp4" type="video/mp4">
+	  Your browser does not support HTML video.
+	</video>
+  </div> 
+<script> 
+	var myVideo = document.getElementById("video1"); 
+	
+	function playPause() { 
+	  if (myVideo.paused) 
+		myVideo.play(); 
+	  else 
+		myVideo.pause(); 
+	} 
+	
+	function makeBig() { 
+		myVideo.width = 560; 
+	} 
+	
+	function makeSmall() { 
+		myVideo.width = 320; 
+	} 
+	
+	function makeNormal() { 
+		myVideo.width = 420; 
+	} 
+	</script> 
+ </p>
+ </article>
+ <hr>
+ <footer style="text-align: center;">
+    <p>Copyright &copy; 2022,Dwi Prayoga</p>
+    <p>Kost Berkah,Bulu Lor,Semarang.</p>
+ </footer>
+</body>
+</html>
