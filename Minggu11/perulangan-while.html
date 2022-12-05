@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+//   for(let i = 0; i < 10; i++){ 
+//     for(let j = 0; j < 10; j++){ 
+//         document.write("Perulangan ke " + i + "," + j + "");
+//     } document.write("<br>")
+// }
+     // membuat array 
+//      var products = ["Senter", "Radio", "Antena", "Obeng"]; 
+ 
+//  document.write("<h3>Daftar Produk:</h3>"); 
+//  document.write("<ol>"); 
+//  // menggunakan perulangan untuk mencetak semua isi array 
+//  for(let i = 0; i < products.length; i++){ 
+//      document.write(`<li>${ products[i] }</li>`); 
+//  } 
+//  document.write("</ol>");
+// Method filter 
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9]; 
+ 
+// ambil data yang hanya habis dibagi dua  
+const filteredArray = angka.filter(item => item % 2 === 0); 
+ 
+console.log(filteredArray) // -> [2, 4, 6, 8] 
+ 
+// Method Includes 
+var tanaman = ["Padi", "Kacang", "Jagung", "Kedelai"]; 
+ 
+// apakah kacang sudah ada di dalam array tanaman? 
+var adaKacang = tanaman.includes("Kacang"); 
+ 
+console.log(adaKacang); // -> true 
+ 
+// apakah bayam ada? 
+var adaBayam = tanaman.includes("Bayam"); 
+ 
+console.log(adaBayam); // -> false 
+ 
+//Method Short 
+var alfabet = ['a','f','z','e','r','g']; 
+var angka = [3,1,2,6,8,5]; 
+ 
+console.log(alfabet.sort()); //->  ["a", "e", "f", "g", "r", "z"] 
+console.log(angka.sort()); // -> [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    </script>
+</body>
+</html>
